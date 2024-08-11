@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Portal Login - NOSG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="School Logo" id="logo">
+        <h1>Admissions Portal</h1>
+    </header>
+
+    <a href="index.html" class="home-btn">Home</a> <!-- Home Button -->
+
+    <main>
+        <section id="login">
+            <h2>Login to the Portal</h2>
+            <p>Don't have an account? <a href="/portal-register.html">Register an account!</a></p>
+            <form action="portal-dashboard.html" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <input type="submit" value="Login" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Footer Logo" class="footer-logo">
+            <p>&copy; 2024 National Online School of Galileo Galilei | All Rights Reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

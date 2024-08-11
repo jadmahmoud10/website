@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Admissions Portal - NOSG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="School Logo" id="logo">
+        <h1>Student Application 2024/2025 - Admissions Portal</h1>
+    </header>
+
+    <a href="index.html" class="home-btn">Home</a>
+
+    <main>
+        <section id="register">
+            <h2>Application</h2>
+            <p>This is the student's parent portal, please let your parents apply for you.</p>
+            <p>Please fill out the student's information to continue the application process.</p>
+            <h2>2/4 Schooling and Grade Information</h2>
+            <form action="portal-dashboard.html" method="post">
+                <h5>1. Previous School</h5>
+                <div class="form-group">
+                    <label for="old-school">Student's Previous School's Name</label>
+                    <input type="text" id="old-school" name="old-school" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="old-school-add">Student's Old School Address (ex. Country - City - Street)</label>
+                    <input type="text" id="old-school-add" name="old-school-add" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="old-school-sys">Student's Old School Educational System (ex. Syrian Educational System)</label>
+                    <input type="text" id="old-school-sys" name="old-school-sys" required>
+                </div>
+                <!-- Dropdown menu -->
+                <div class="form-group select-wrapper">
+                    <label for="previous-grade">Student's Grade in Previous School: (Year 2023/2024 or before)</label>
+                    <select id="previous-grade" name="previous-grade" required>
+                        <option value="" disabled selected>Select an option:</option>
+                        <option value="1">Grade 1</option>
+                        <option value="2">Grade 2</option>
+                        <option value="3">Grade 3</option>
+                        <option value="4">Grade 4</option>
+                        <option value="5">Grade 5</option>
+                        <option value="6">Grade 6</option>
+                        <option value="7">Grade 7</option>
+                        <option value="8">Grade 8</option>
+                        <option value="9">Grade 9</option>
+                        <option value="10-s">Grade 10 Scientific</option>
+                        <option value="10-l">Grade 10 Literary</option>
+                        <option value="11-s">Grade 11 Scientific</option>
+                        <option value="11-l">Grade 11 Literary</option>
+                        <option value="12-s">Grade 12 Scientific</option>
+                        <option value="12-l">Grade 12 Literary</option>
+                    </select>
+                </div>
+                <h6>Most Common School Educational Systems</h6>
+    
+                <table>
+                    <!-- Table Header -->
+                    <thead>
+                        <tr>
+                            <th>Age</th>
+                            <th>Syrian Educational System</th>
+                            <th>Equivalent in Cambridge's Educational System</th>
+                            <th>Equivalent in AEFE’s Educational System (French)</th>
+                        </tr>
+                    </thead>
+                    
+                    <!-- Table Body -->
+                    <tbody>
+                        <tr>
+                            <td>6 - 7</td>
+                            <td>Grade 1 (Elementary)</td>
+                            <td>Grade 2 (Primary)</td>
+                            <td>CP (Élémentaire)</td>
+                        </tr>
+                        <tr>
+                            <td>7 - 8</td>
+                            <td>Grade 2 (Elementary)</td>
+                            <td>Grade 3 (Primary)</td>
+                            <td>CE1 (Élémentaire)</td>
+                        </tr>
+                        <tr>
+                            <td>8 - 9</td>
+                            <td>Grade 3 (Elementary)</td>
+                            <td>Grade 4 (Primary)</td>
+                            <td>CE2 (Élémentaire)</td>
+                        </tr>
+                        <tr>
+                            <td>9 - 10</td>
+                            <td>Grade 4 (Elemmentary)</td>
+                            <td>Grade 5 (Primary)</td>
+                            <td>CM1 (Élémentaire)</td>
+                        </tr>
+                        <tr>
+                            <td>10 - 11</td>
+                            <td>Grade 5 (Elementary)</td>
+                            <td>Grade 6 (Primary)</td>
+                            <td>CM2 (Élémentaire)</td>
+                        </tr>
+                        <tr>
+                            <td>11 - 12</td>
+                            <td>Grade 6 (Elementary)</td>
+                            <td>Grade 7 (Lower Secondary)</td>
+                            <td>6e (Collège)</td>
+                        </tr>
+                        <tr>
+                            <td>12 - 13</td>
+                            <td>Grade 7 (Middle - Preparatory)</td>
+                            <td>Grade 8 (Lower Secondary)</td>
+                            <td>5e (Collège)</td>
+                        </tr>
+                        <tr>
+                            <td>13 - 14</td>
+                            <td>Grade 8 (Middle - Preparatory)</td>
+                            <td>Grade 9 (Lower Secondary)</td>
+                            <td>4e (Collège)</td>
+                        </tr>
+                        <tr>
+                            <td>14 - 15</td>
+                            <td>Grade 9 (Middle Preparatory)</td>
+                            <td>Grade 10 (IGCSE Year 1)</td>
+                            <td>3e (Collège)</td>
+                        </tr>
+                        <tr>
+                            <td>15 - 16</td>
+                            <td>Grade 10 (High - Secondary)</td>
+                            <td>Grade 11 (IGCSE Year 2)</td>
+                            <td>2de (Lycée)</td>
+                        </tr>
+                        <tr>
+                            <td>16 - 17</td>
+                            <td>Grade 11 (High - Secondary)</td>
+                            <td>Grade 12 (International AS & A Year 1)</td>
+                            <td>1re (Lycée)</td>
+                        </tr>
+                        <tr>
+                            <td>17 - 18</td>
+                            <td>Grade 12 (High - Secondary)</td>
+                            <td>Grade 13 (International AS & A Year 2)</td>
+                            <td>Terminal (Lycée)</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    
+                    
+                </table>
+<h5>2. Schooling wished in our school</h5>
+                <!-- Dropdown menu -->
+                <div class="form-group select-wrapper">
+                    <label for="grade">Students Grade: (For School Year 2024/2025)</label>
+                    <select id="relationship" name="relationship" required>
+                        <option value="" disabled selected>Select an option:</option>
+                        <option value="1">Grade 1</option>
+                        <option value="2">Grade 2</option>
+                        <option value="3">Grade 3</option>
+                        <option value="4">Grade 4</option>
+                        <option value="5">Grade 5</option>
+                        <option value="6">Grade 6</option>
+                        <option value="7">Grade 7</option>
+                        <option value="8">Grade 8</option>
+                        <option value="9">Grade 9</option>
+                        <option value="10-s">Grade 10 Scientific</option>
+                        <option value="10-l">Grade 10 Literary</option>
+                        <option value="11-s">Grade 11 Scientific</option>
+                        <option value="11-l">Grade 11 Literary</option>
+                        <option value="12-s">Grade 12 Scientific</option>
+                        <option value="12-l">Grade 12 Literary</option>
+                    </select>
+                </div>
+
+            </select>
+        </div>
+
+        <label for="assistance">Does the student need any assistance or do they have a disability? If yes, Furhter information will be contacted to you soon.
+        </label>
+<div class="checkbox-group" id="assistance">
+<label>
+<input type="radio" name="assistance[]" value="y"> Yes
+</label><br>
+<label>
+<input type="radio" name="assistance[]" value="n"> No
+</label><br>
+</div>
+
+                
+
+                <div class="form-group">
+                    <label for="notes">Please indicate whether you have any notes regarding the student: (Optional)</label>
+    <input type="text" id="notes" name="notes" optional>
+                </div>
+
+                <button type="submit" class="submit-btn">Next</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Footer Logo" class="footer-logo">
+            <p>&copy; 2024 National Online School of Galileo Galilei | All Rights Reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="dropdown.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>

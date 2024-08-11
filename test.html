@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test - NOSG</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <table id="applicationsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Identity Photo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Application rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch applications and populate the table
+        fetch('/get-applications')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#applicationsTable tbody');
+                data.forEach(app => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${app.id}</td>
+                        <td>${app.first_name}</td>
+                        <td>${app.last_name}</td>
+                        <td><img src="${app.identity_photo}" alt="Identity Photo" width="100"></td>
+                        <td>
+                            <a href="/edit-application/${app.id}">Edit</a>
+                            <a href="/delete-application/${app.id}">Delete</a>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>

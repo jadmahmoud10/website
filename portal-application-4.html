@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Admissions Portal - NOSG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="School Logo" id="logo">
+        <h1>Student Application 2024/2025 - Admissions Portal</h1>
+    </header>
+
+    <a href="index.html" class="home-btn">Home</a>
+
+    <main>
+        <section id="register">
+            <h2>Application</h2>
+            <p>This is the student's parent portal, please let your parents apply for you.</p>
+            <p>Please fill out the student's information to continue the application process.</p>
+            <h2>4/4 Documents</h2>
+            <form action="portal-dashboard.html" method="post">
+                <h6>*If you accidently upload wrong files, click "Choose File" to upload again.</h6>
+                <h5>1. Student's Documents</h5>
+                <!-- Dropdown menu -->
+                <div>
+                    <label for="student-passport-document">Upload Student's PDF Copy of their passport:</label>
+                    <input type="file" id="student-passport-document" name="student-passport-document" multiple>
+                </div>
+
+                <div>
+                    <label for="student-concatenation-document">Upload Student's PDF Copy of their Study Concatenation:</label>
+                    <input type="file" id="student-concatenation-document" name="student-concatenation-document" multiple>
+                </div>
+
+                <div>
+                    <label for="student-document-additional">Upload Student's PDF Copy of any further information you think may strengthen their application:</label>
+                    <input type="file" id="student-document-document" name="student-document-document" multiple>
+                </div>
+
+<h5>2. Guardian's Documents</h5>
+        <!-- Dropdown menu -->
+        <div>
+            <label for="guardian-1-passport-document">Upload 1st Guardian's PDF Copy of their passport:</label>
+            <input type="file" id="guardian-1-passport-document" name="guardian-1-passport-document" multiple>
+        </div>
+
+        <div>
+            <label for="guardian-2-passport-document">Upload 2nd Guardian's PDF Copy of their passport:</label>
+            <input type="file" id="guardian-2-passport-document" name="guardian-2-passport-document" multiple>
+        </div>
+
+        <h5>3. Family's Documents</h5>
+        <!-- Dropdown menu -->
+        <div>
+            <label for="fam-doc">Upload a PDF Copy of the Family's record book or civil status</label>
+            <input type="file" id="fam-doc" name="fam-doc" multiple>
+        </div>
+
+    
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Footer Logo" class="footer-logo">
+            <p>&copy; 2024 National Online School of Galileo Galilei | All Rights Reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="dropdown.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>

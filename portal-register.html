@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Portal Registration - NOSG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="School Logo" id="logo">
+        <h1>Admissions Portal</h1>
+    </header>
+
+    <a href="index.html" class="home-btn">Home</a>
+
+    <main>
+        <section id="register">
+            <h2>Register for the Portal</h2>
+            <p>This is the student's parent portal, please let your parents register for you using their information.</p>
+            <p>Have an account already? <a href="/portal-login.html">Log in</a></p>
+            <form action="portal-dashboard.html" method="post">
+                <div class="form-group">
+                    <label for="parent-first-name">Parent's First Name:</label>
+                    <input type="text" id="parent-first-name" name="parent-first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="parent-last-name">Parent's Last Name:</label>
+                    <input type="text" id="parent-last-name" name="parent-last-name" required>
+                </div>
+
+                <!-- Dropdown menu -->
+                <div class="form-group select-wrapper">
+                    <label for="relationship">Relationship To Student:</label>
+                    <select id="relationship" name="relationship" required>
+                        <option value="" disabled selected>Select an option:</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Father">Father</option>
+                        <option value="Other Legal Guardian">Other Legal Guardian</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="parent-email">Parent's Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create a Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <input type="submit" value="Register" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Footer Logo" class="footer-logo">
+            <p>&copy; 2024 National Online School of Galileo Galilei | All Rights Reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="dropdown.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>

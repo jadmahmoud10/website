@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Admissions Portal - NOSG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="School Logo" id="logo">
+        <h1>Student Application 2024/2025 - Admissions Portal</h1>
+    </header>
+
+    <a href="index.html" class="home-btn">Home</a>
+
+    <main>
+        <section id="register">
+            <h2>Application</h2>
+            <p>This is the student's parent portal, please let your parents apply for you.</p>
+            <p>Please fill out the student's information to continue the application process.</p>
+            <h2>3/4 Finanace</h2>
+            <form action="portal-dashboard.html" method="post">
+                <h5>1. Invoicing System</h5>
+                <!-- Dropdown menu -->
+                <div class="form-group select-wrapper">
+                    <label for="invoice-payee">Schooling Fees Payee:</label>
+                    <select id="invoice-payee" name="invoice-payee" required>
+                        <option value="" disabled selected>Select an option:</option>
+                        <option value="fam">Family</option>
+                        <option value="com">Company</option>
+                    </select>
+                </div>
+
+                <div class="form-group select-wrapper">
+                    <label for="invoice-method">Schooling Fees Payment Method:</label>
+                    <select id="invoice-method" name="invoice-method" required>
+                        <option value="" disabled selected>Select an option:</option>
+                        <option value="online">Online Payment</option>
+                        <option value="bank">Payment through a Bank</option>
+                        <option value="cash">Cash Payment (In The School's Office)</option>
+                    </select>
+                </div>
+<h6>*Payment's accepted currency is the National Syrian Pound For Students Inside Syria</h6>
+                
+<h5>2. Financial Aid</h5>
+        </div>
+
+        <label for="finanacial-aid">Do you request to use any of our <a href="scholarships.html">financial aid services</a>? <h8>(requires proof of being unable to pay the full school fees in one payment). <h7>If yes, furhter information will be contacted if the application is accepted.</h7>
+        </label>
+<div class="checkbox-group" id="assistance">
+<label>
+<input type="radio" name="assistance[]" value="y"> Yes
+</label><br>
+<label>
+<input type="radio" name="assistance[]" value="n"> No
+</label><br>
+</div>
+
+                
+<h5>3. Notes</h5>
+                <div class="form-group">
+                    <label for="notes">Please indicate whether you have any notes regarding the finanacial rules: (Optional)</label>
+    <input type="text" id="notes" name="notes" optional>
+                </div>
+
+<h5>4. Agreement</h5>
+<label for="rules">By Clicking the "Yes" Button, I agree to all the school's financial rules listed in <a href="terms.html">Terms & Conditions</a> <h8>In case you don't agree, you're welcome to negotiate or cancle and delete this application.
+</label>
+<h8>Thanks For Understnading.</h8>
+<div class="checkbox-group" id="rules">
+<label>
+<input type="radio" name="assistance[]" value="y"> Yes, I agree to all the finanacial rules.
+</label><br>
+</div>
+
+                <button type="submit" class="submit-btn">Next</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Footer Logo" class="footer-logo">
+            <p>&copy; 2024 National Online School of Galileo Galilei | All Rights Reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="dropdown.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>
